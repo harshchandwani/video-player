@@ -60,11 +60,13 @@ const VideoPlayer = () => {
 
   return (
       <div>
-        <h1 className={styles.text}>This is the Video Application for Athena Square</h1>
+        {/* <h1 className={styles.text}>This is the Video Application for Athena Square</h1> */}
         <video className={styles.video} ref={videoRef} src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_30mb.mp4"></video>
+        
         <button className={styles.button} onClick={togglePlay}>
-          {isPlaying ? 'Pause' : 'Play'}
+            {isPlaying ? 'Pause' : 'Play'}
         </button>
+        
         <input
           className={styles.volumeslider} /* Apply volume slider style */
           type="range"
@@ -74,6 +76,7 @@ const VideoPlayer = () => {
           value={volume}
           onChange={handleVolumeChange}
         />
+      
         <input
           className={styles.speedslider} /* Apply speed slider style */
           type="range"
@@ -92,7 +95,8 @@ const VideoPlayer = () => {
         value={(currentTime / duration) * 100}
         onChange={handleProgressChange}
       />
-      <progress value={currentTime} max={duration}></progress>
+      <br></br>
+      <progress className= {styles.progressbarauto}value={currentTime} max={duration}></progress>
         </div>
       </div>
     );
