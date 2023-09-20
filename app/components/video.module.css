@@ -1,0 +1,62 @@
+.button{
+    padding:40px;
+  background-color: #EA4C89;
+  border-radius: 98px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+
+  outline: none;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align:auto;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #F082AC;
+}
+
+.video{
+    padding: 50px 400px 100px;
+
+}
+
+
+
+  
+.volumeslider {
+    margin-right: 20px;
+    margin-left: 50px; /* Add spacing to the right of the volume slider */
+}
+  
+.speedslider {
+    margin-right: 20px;
+    margin-left: 50px; /* Add spacing to the right of the speed slider */
+}
+  
+.progressbar {
+    margin-top: 10px;
+    margin-left: 170px;
+     /* Add spacing above the progress bar */
+}
+  
+
+.text{
+    text-align: center; /* Center-align the text */
+  font-size: 36px; /* Increase the font size */
+  font-weight: bold; /* Make the text bold */
+}
